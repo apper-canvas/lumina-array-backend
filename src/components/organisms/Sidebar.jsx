@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/atoms/Card";
-import Button from "@/components/atoms/Button";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/atoms/Card";
 import ApperIcon from "@/components/ApperIcon";
 import SearchBar from "@/components/molecules/SearchBar";
-import Loading from "@/components/ui/Loading";
+import Button from "@/components/atoms/Button";
 import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
 
 const Sidebar = ({ 
   pdfs = [], 
@@ -103,11 +103,11 @@ const Sidebar = ({
               <Loading type="search" />
             ) : searchResults.length === 0 ? (
               <Empty type="search" />
-            ) : (
+) : (
               <div className="space-y-3">
                 {searchResults.map((result, index) => (
                   <motion.div
-                    key={index}
+                    key={`search-${index}`}
                     className="p-3 bg-nord-1 border border-nord-3 rounded-lg hover:bg-nord-2 cursor-pointer transition-colors"
                     onClick={() => {
                       const pdf = pdfs.find(p => p.id === result.pdfId);
@@ -139,7 +139,7 @@ const Sidebar = ({
 
       case "annotations":
         return (
-          <div className="space-y-3">
+<div className="space-y-3">
             {annotations.length === 0 ? (
               <Empty type="annotations" />
             ) : (
@@ -177,7 +177,7 @@ const Sidebar = ({
 
       case "summaries":
         return (
-          <div className="space-y-3">
+<div className="space-y-3">
             {summaries.length === 0 ? (
               <Empty type="summaries" />
             ) : (
@@ -199,10 +199,10 @@ const Sidebar = ({
                   </p>
                   {summary.keyPoints && summary.keyPoints.length > 0 && (
                     <div className="space-y-1">
-<span className="text-xs font-medium text-nord-3">Key Points:</span>
+                      <span className="text-xs font-medium text-nord-3">Key Points:</span>
                       <ul className="space-y-1">
                         {summary.keyPoints.map((point, index) => (
-                          <li key={index} className="text-xs text-nord-4 flex items-start gap-2">
+                          <li key={`point-${index}`} className="text-xs text-nord-4 flex items-start gap-2">
                             <div className="w-1 h-1 bg-nord-8 rounded-full mt-2 flex-shrink-0" />
                             {point}
                           </li>
@@ -249,6 +249,7 @@ const Sidebar = ({
 
         {!isCollapsed && (
           <>
+<>
             {/* Tabs */}
             <div className="p-4 border-b border-nord-3">
               <div className="grid grid-cols-2 gap-2">
@@ -264,7 +265,7 @@ const Sidebar = ({
                     {tab.label}
                   </Button>
                 ))}
-              </div>
+</div>
             </div>
 
             {/* Content */}
