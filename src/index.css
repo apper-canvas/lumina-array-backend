@@ -4,9 +4,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-nord-0 text-nord-4 font-display antialiased;
     overflow-x: hidden;
