@@ -200,9 +200,9 @@ const Sidebar = ({
                   {summary.keyPoints && summary.keyPoints.length > 0 && (
                     <div className="space-y-1">
                       <span className="text-xs font-medium text-nord-3">Key Points:</span>
-                      <ul className="space-y-1">
+<ul className="space-y-1">
                         {summary.keyPoints.map((point, index) => (
-                          <li key={`point-${index}`} className="text-xs text-nord-4 flex items-start gap-2">
+                          <li key={`${summary.id}-point-${index}`} className="text-xs text-nord-4 flex items-start gap-2">
                             <div className="w-1 h-1 bg-nord-8 rounded-full mt-2 flex-shrink-0" />
                             {point}
                           </li>
@@ -251,7 +251,7 @@ const Sidebar = ({
 <>
             {/* Tabs */}
             <div className="p-4 border-b border-nord-3">
-              <div className="grid grid-cols-2 gap-2">
+<div className="grid grid-cols-2 gap-2">
                 {tabs.map((tab) => (
                   <Button
                     key={tab.id}
@@ -264,7 +264,7 @@ const Sidebar = ({
                     {tab.label}
                   </Button>
                 ))}
-</div>
+              </div>
             </div>
 
             {/* Content */}
