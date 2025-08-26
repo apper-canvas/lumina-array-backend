@@ -1,0 +1,105 @@
+@import "react-toastify/dist/ReactToastify.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-nord-0 text-nord-4 font-display antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  @apply font-display text-sm;
+  width: 350px;
+  top: 1rem;
+  right: 1rem;
+}
+
+.Toastify__toast {
+  @apply bg-nord-1 text-nord-4 border border-nord-3 rounded-lg shadow-lg;
+  min-height: 48px;
+  padding: 12px 16px;
+}
+
+.Toastify__toast--success {
+  @apply border-nord-14;
+}
+
+.Toastify__toast--error {
+  @apply border-nord-11;
+}
+
+.Toastify__toast--warning {
+  @apply border-nord-13;
+}
+
+.Toastify__progress-bar {
+  @apply bg-nord-8;
+}
+
+/* PDF Viewer Custom Styles */
+.pdf-page {
+  @apply shadow-lg bg-white mb-4 rounded-sm;
+  max-width: 100%;
+}
+
+.pdf-highlight {
+  @apply bg-opacity-30 cursor-pointer;
+  transition: background-color 150ms ease-out;
+}
+
+.pdf-highlight:hover {
+  @apply bg-opacity-50;
+}
+
+.annotation-highlight {
+  @apply bg-nord-8 bg-opacity-30;
+}
+
+.annotation-note {
+  @apply bg-nord-13 bg-opacity-30;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-nord-0;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-nord-3 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-nord-2;
+}
+
+/* Focus States */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-nord-8 focus:ring-offset-2 focus:ring-offset-nord-0;
+}
+
+/* Text Selection */
+::selection {
+  @apply bg-nord-8 bg-opacity-30 text-nord-6;
+}
+
+/* Night Mode Adjustments */
+.night-mode .pdf-page {
+  @apply bg-nord-0 text-nord-4;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.night-mode .pdf-page img {
+  filter: invert(1) hue-rotate(180deg);
+}

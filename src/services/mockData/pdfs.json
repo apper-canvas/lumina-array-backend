@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "title": "Machine Learning Fundamentals",
+    "path": "/documents/ml-fundamentals.pdf",
+    "size": 2458624,
+    "pageCount": 45,
+    "lastOpened": "2024-01-15T10:30:00Z",
+    "isOCRProcessed": true,
+    "extractedText": [
+      "Introduction to machine learning concepts and algorithms",
+      "Supervised learning techniques and applications",
+      "Unsupervised learning and clustering methods"
+    ]
+  },
+  {
+    "Id": 2,
+    "title": "Research Paper - Neural Networks",
+    "path": "/documents/neural-networks.pdf",
+    "size": 1856432,
+    "pageCount": 28,
+    "lastOpened": "2024-01-14T14:22:00Z",
+    "isOCRProcessed": true,
+    "extractedText": [
+      "Deep neural network architectures and training methods",
+      "Backpropagation algorithm and optimization techniques",
+      "Convolutional neural networks for image recognition"
+    ]
+  },
+  {
+    "Id": 3,
+    "title": "Data Science Handbook",
+    "path": "/documents/data-science-handbook.pdf",
+    "size": 4235678,
+    "pageCount": 156,
+    "lastOpened": "2024-01-13T09:15:00Z",
+    "isOCRProcessed": false,
+    "extractedText": []
+  },
+  {
+    "Id": 4,
+    "title": "Statistical Analysis Methods",
+    "path": "/documents/statistical-methods.pdf",
+    "size": 3124567,
+    "pageCount": 89,
+    "lastOpened": "2024-01-12T16:45:00Z",
+    "isOCRProcessed": true,
+    "extractedText": [
+      "Descriptive statistics and data visualization",
+      "Hypothesis testing and confidence intervals",
+      "Regression analysis and correlation studies"
+    ]
+  },
+  {
+    "Id": 5,
+    "title": "Python Programming Guide",
+    "path": "/documents/python-guide.pdf",
+    "size": 1967834,
+    "pageCount": 67,
+    "lastOpened": "2024-01-11T11:20:00Z",
+    "isOCRProcessed": true,
+    "extractedText": [
+      "Python syntax and basic programming concepts",
+      "Object-oriented programming in Python",
+      "Data structures and algorithms implementation"
+    ]
+  }
+]

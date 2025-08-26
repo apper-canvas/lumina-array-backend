@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "pdfId": "1",
+    "type": "highlight",
+    "pageNumber": 12,
+    "coordinates": { "x": 120, "y": 200, "width": 180, "height": 16 },
+    "content": "Machine learning is a subset of artificial intelligence that focuses on algorithms",
+    "color": "#88C0D0",
+    "createdAt": "2024-01-15T10:35:00Z"
+  },
+  {
+    "Id": 2,
+    "pdfId": "1",
+    "type": "note",
+    "pageNumber": 15,
+    "coordinates": { "x": 250, "y": 300, "width": 200, "height": 80 },
+    "content": "Important concept for understanding supervised learning approaches",
+    "color": "#EBCB8B",
+    "createdAt": "2024-01-15T10:42:00Z"
+  },
+  {
+    "Id": 3,
+    "pdfId": "2",
+    "type": "highlight",
+    "pageNumber": 8,
+    "coordinates": { "x": 80, "y": 150, "width": 220, "height": 16 },
+    "content": "Neural networks consist of interconnected nodes that process information",
+    "color": "#A3BE8C",
+    "createdAt": "2024-01-14T14:25:00Z"
+  },
+  {
+    "Id": 4,
+    "pdfId": "2",
+    "type": "highlight",
+    "pageNumber": 18,
+    "coordinates": { "x": 100, "y": 400, "width": 190, "height": 16 },
+    "content": "Backpropagation algorithm enables efficient training of deep networks",
+    "color": "#BF616A",
+    "createdAt": "2024-01-14T14:30:00Z"
+  },
+  {
+    "Id": 5,
+    "pdfId": "4",
+    "type": "note",
+    "pageNumber": 25,
+    "coordinates": { "x": 150, "y": 250, "width": 180, "height": 60 },
+    "content": "Review this section on hypothesis testing - key for research methodology",
+    "color": "#B48EAD",
+    "createdAt": "2024-01-12T16:50:00Z"
+  }
+]

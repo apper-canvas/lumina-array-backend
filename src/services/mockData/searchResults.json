@@ -1,0 +1,42 @@
+[
+  {
+    "pdfId": "1",
+    "pageNumber": 12,
+    "snippet": "Machine learning algorithms can automatically improve their performance through experience. This capability distinguishes ML from traditional programming approaches where explicit instructions must be provided for every scenario.",
+    "relevanceScore": 0.95,
+    "highlightRanges": [
+      { "start": 0, "end": 17, "type": "exact" },
+      { "start": 32, "end": 42, "type": "semantic" }
+    ]
+  },
+  {
+    "pdfId": "2",
+    "pageNumber": 15,
+    "snippet": "Neural networks mimic the structure of biological neurons, creating artificial neural pathways that can process complex patterns in data. The interconnected nature allows for distributed processing and learning.",
+    "relevanceScore": 0.88,
+    "highlightRanges": [
+      { "start": 0, "end": 15, "type": "exact" },
+      { "start": 89, "end": 97, "type": "semantic" }
+    ]
+  },
+  {
+    "pdfId": "1",
+    "pageNumber": 34,
+    "snippet": "Supervised learning requires labeled training data to build predictive models. The algorithm learns from input-output pairs to generalize patterns for making predictions on new, unseen data.",
+    "relevanceScore": 0.82,
+    "highlightRanges": [
+      { "start": 0, "end": 19, "type": "exact" },
+      { "start": 95, "end": 105, "type": "semantic" }
+    ]
+  },
+  {
+    "pdfId": "4",
+    "pageNumber": 45,
+    "snippet": "Statistical learning theory provides the mathematical foundation for machine learning algorithms. It establishes bounds on generalization error and guides algorithm design for optimal performance.",
+    "relevanceScore": 0.79,
+    "highlightRanges": [
+      { "start": 75, "end": 92, "type": "exact" },
+      { "start": 110, "end": 120, "type": "semantic" }
+    ]
+  }
+]
