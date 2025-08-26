@@ -199,7 +199,7 @@ const Sidebar = ({
                   </p>
                   {summary.keyPoints && summary.keyPoints.length > 0 && (
                     <div className="space-y-1">
-                      <span className="text-xs font-medium text-nord-3">Key Points:</span>
+<span className="text-xs font-medium text-nord-3">Key Points:</span>
                       <ul className="space-y-1">
                         {summary.keyPoints.map((point, index) => (
                           <li key={index} className="text-xs text-nord-4 flex items-start gap-2">

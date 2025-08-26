@@ -73,7 +73,7 @@ const AnnotationToolbar = ({ onToolSelect, selectedTool = "select" }) => {
               initial={{ opacity: 0, scale: 0.95, y: -10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               className="absolute top-12 right-0 bg-nord-1 border border-nord-3 rounded-lg p-3 shadow-lg z-50"
-            >
+>
               <div className="grid grid-cols-3 gap-2">
                 {colors.map((color) => (
                   <motion.button

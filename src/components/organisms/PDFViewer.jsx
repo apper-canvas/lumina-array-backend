@@ -158,11 +158,11 @@ const PDFViewer = ({ pdf, annotations = [], onAnnotationAdd, searchHighlights = 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-        >
+>
           {/* Simulated PDF Pages */}
           {[...Array(Math.min(3, pdf.pageCount))].map((_, index) => (
             <motion.div
-              key={index}
+              key={`page-${currentPage + index}`}
               className="pdf-page relative bg-white p-8 shadow-lg"
               style={{ 
                 transform: `scale(${zoom})`,
