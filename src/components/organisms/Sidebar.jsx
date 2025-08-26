@@ -248,7 +248,6 @@ const Sidebar = ({
         </div>
 
         {!isCollapsed && (
-          <>
 <>
             {/* Tabs */}
             <div className="p-4 border-b border-nord-3">
